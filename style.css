@@ -84,7 +84,7 @@ nav {
     line-height: normal;
 }
 
-.page-section-intro {}
+.page {}
 
 .banner {
     display: flex;
@@ -592,7 +592,6 @@ nav {
 
     width: 425px;
     align-items: flex-start;
-    gap: 71px;
 }
 
 hr {
@@ -695,4 +694,131 @@ hr {
     font-weight: 400;
     line-height: 150%;
     /* 27px */
+}
+
+.placement {
+    width: 100%;
+    height: 794px;
+    flex-shrink: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    /* padding: 80px 110px; */
+}
+
+.placement-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.p-1 {
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+
+    background: var(--New, linear-gradient(277deg, #992FED 0%, #2F80ED 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.placement-header>h1 {
+    color: var(--BLACK, #2B2F34);
+    text-align: center;
+    font-family: ABeeZee;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 63px */
+    letter-spacing: -0.63px;
+}
+
+.software-engineer {
+    color: var(--primaryskyblue, #2F80ED);
+    font-family: ABeeZee;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.63px;
+}
+
+.p-2 {
+    text-align: center;
+    color: var(--textlabelcolorscharcoal, #595959);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 23.4px */
+    letter-spacing: 0.36px;
+}
+
+.companies {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+    column-gap: 54px;
+    row-gap: 48px;
+    /* width: 50%; */
+}
+
+.item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    height: 20px;
+    /* width: 20px; */
+    transform: scale(1.2);
+    overflow: hidden;
+}
+.amazon, .innovaccer{
+    transform: scale(4);
+}
+.publicis-sapient, .makemytrip, .cadence{
+    transform: scale(2);
+}
+
+
+.placement-report {
+    display: flex;
+    width: 276px;
+    padding: 14px 6px 14px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    border-radius: 8px;
+    background: var(--primaryskyblue, #2F80ED);
+}
+
+.placement-report p {
+    color: var(--WHITE, #FFF);
+    font-family: ABeeZee;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+.placement-report img {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
