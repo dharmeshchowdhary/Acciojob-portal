@@ -5,7 +5,8 @@
 }
 
 body {
-    width: auto;
+    /* width: auto;
+    width: 100%; */
 }
 
 header {
@@ -101,12 +102,12 @@ nav {
 }
 
 .page {
-    width: auto;
+    /* width: auto; */
 }
 
 .banner {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding: 8px 0;
     justify-content: center;
     align-items: center;
@@ -1080,8 +1081,6 @@ hr {
 }
 
 @media screen and (max-width: 950px) {
-    * {}
-
     .options {
         display: none;
     }
