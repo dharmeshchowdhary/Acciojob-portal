@@ -1,22 +1,15 @@
-/* body{
-    width: 100%;
-} */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Bai Jamjuree';
 }
 
-body {
-    /* width: auto;
-    width: 100%; */
-}
-
 header {
-    padding: 15px 108px;
+    width: 100%;
 }
 
 nav {
+    padding: 15px 108px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,7 +98,7 @@ nav {
 }
 
 .page {
-    /* width: auto; */
+    width: 100%;
 }
 
 .banner {
@@ -133,7 +126,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 110px;
+    padding: 110px 0;
     gap: 133px;
 }
 
@@ -435,6 +428,8 @@ nav {
     align-items: center;
     gap: 60px;
     background: #ECF8FF;
+    margin: 10px 0;
+    width: 100%;
 }
 
 .course-section-heading {
@@ -476,6 +471,9 @@ nav {
 .course-templates {
     display: flex;
     gap: 21px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .beginner:hover,
@@ -486,6 +484,7 @@ nav {
 
 .beginner,
 .intermediate {
+    width: 100%;
     border-radius: 9px;
     border: 2px solid var(--primaryskyblue, #2F80ED);
     background: #FFF;
@@ -725,16 +724,17 @@ hr {
 }
 
 .placement {
-    width: 100%;
-    height: 794px;
-    flex-shrink: 0;
+    /* width: 100%; */
+    /* height: 794px; */
+    /* flex-shrink: 0; */
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 43px;
-    /* padding: 80px 110px; */
+    padding: 80px 0px;
+    margin: 10px 0;
 }
 
 .placement-header {
@@ -866,7 +866,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 107px;
+    padding: 120px 0px;
     gap: 55px;
 }
 
@@ -993,10 +993,6 @@ hr {
         font-size: 1rem;
     }
 
-    .nav {
-        font-size: 0.5rem;
-    }
-
     .intro {
         display: flex;
         flex-direction: column;
@@ -1114,7 +1110,220 @@ hr {
     .companies {
         display: grid;
         grid-template: repeat(5, 1fr) / repeat(3, 1fr);
-        column-gap: 54px;
+        column-gap: 35px;
         row-gap: 48px;
+    }
+
+    .item {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        height: 20px;
+        /* width: 20px; */
+        transform: scale(1.2);
+        overflow: hidden;
+    }
+
+    .amazon,
+    .innovaccer {
+        transform: scale(3);
+    }
+
+    .publicis-sapient,
+    .makemytrip,
+    .cadence {
+        transform: scale(2);
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    * {
+        font-size: small;
+    }
+
+    nav {
+        padding: 15px 15px;
+    }
+
+    .options-menu {
+        width: 25px;
+        height: 25px;
+    }
+
+    .intro {
+        padding: 10px 15px;
+    }
+
+    .intro-details h1,
+    .full-stack-developer {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: 0.36px;
+    }
+
+    .sign-up {
+        width: 80%;
+        /* padding: 28px 10px; */
+        font-size: 16px;
+    }
+
+    .name, .contact{
+        width: 100%;
+    }
+
+    .title {
+        /* width: 291px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sign-up p {
+        width: 80%;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .terms {
+        width: 100%;
+    }
+
+    .top-text {
+        position: absolute;
+        top: -17px;
+        right: 20px;
+    }
+
+    .top-text h2 {
+        color: var(--WHITE, #FFF);
+        font-family: ABeeZee;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+
+    .beginner,
+    .intermediate {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .course-details {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .b-title p {
+        text-align: center;
+    }
+
+    .query {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .query-1-right,
+    .query-2-right,
+    .query-3-right,
+    .query-4-right,
+    .query-5-right {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .course-buttons {
+        flex-direction: column;
+    }
+
+    .graphic-arrow {
+        display: none;
+        scale: 2;
+        right: -650px;
+    }
+
+    .placement h1{
+        font-size: 25px;
+    }
+
+    .companies {
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+        column-gap: 35px;
+        row-gap: 48px;
+    }
+
+    .item {
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item img {
+        height: 20px;
+        /* width: 20px; */
+        transform: scale(1);
+        overflow: hidden;
+    }
+
+    .amazon,
+    .innovaccer {
+        transform: scale(1);
+    }
+
+    .publicis-sapient,
+    .makemytrip,
+    .cadence {
+        transform: scale(1);
+    }
+
+    .wall-of-love {
+        width: 100%;
+        padding: 120px 0px;
+        gap: 55px;
+    }
+
+    .wall-of-love-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .wall-of-love-title h1{
+        font-size: 25px;
+    }
+
+    .alumni-card {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .alumni-cards {
+        flex-direction: column;
+    }
+
+    .card-header {
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
